@@ -1,0 +1,120 @@
+.section-1{
+    background-color: rgb(179, 228, 231);
+    z-index: 0;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.home-page ul{
+    display: flex;
+    list-style: none;
+    font-family: "Fjalla One" , sans-serif;
+    font-size: 170%;
+    gap: 200px;
+    padding: 1% 1%;
+    color: #274c6d;
+}
+.home-page ul li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.home-page ul button{
+    width: 400px;
+    height: 60px;
+    font-family: "Fjalla One" , sans-serif;
+    font-size: 80%;
+    color: white;
+    border-radius: 80px;
+    background-color: #6464a1;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #274c6d;
+    transition: 0.3s;
+}
+.home-page ul li:hover{
+    transform: translateY(3px);
+}
+.home-page ul button:hover{
+    transform: translateY(3px);
+    background-color: #7e7ec4;
+}
+.cloud{
+    position: absolute;
+    top: 1%;
+    left: 70%;
+    z-index: -1;
+}
+.cloud-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.cloud-2{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: -1;
+}
+.sun{
+    position: absolute;
+    z-index: -1;
+}
+.title-home{
+    width: 30%;
+    color: #274c6d;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.title-home h1{
+    font-size: 500%;
+    font-family: "Chewy" , system-ui;
+}
+.title-home p{
+    font-size: 250%;
+    font-family: "Fjalla One" , sans-serif;
+    margin: 5% 0;
+}
+.title-home button{
+    width: 50%;
+    height: 70px;
+    font-family: "Fjalla One" , sans-serif;
+    font-size: 130%;
+    color: white;
+    background-color: #274c6d;
+    border: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.title-home button:hover{
+    background-color: #7e7ec4;
+}
+.image-home img{
+    width: 40%;
+    animation: imageVerb;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 0 2%;
+}
+.image-home{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    overflow: hidden;
+}
+@keyframes imageVerb {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
