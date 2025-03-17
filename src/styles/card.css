@@ -1,0 +1,12 @@
+.main-card{
+    width: 30%;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+}
+.main-card h1{
+    font-size: 200%;
+}
+.main-card p{
+    font-size: 130%;
+    font-weight: 100;
+}
