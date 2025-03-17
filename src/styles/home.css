@@ -1,11 +1,14 @@
+
 .section-1{
     background-color: rgb(179, 228, 231);
     z-index: 0;
+    padding-bottom: 50%;
     position: relative;
 }
 header{
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 .home-page ul{
     display: flex;
@@ -112,9 +115,114 @@ header{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(5px);
+        transform: translateY(6px);
     }
     100%{
         transform: translateY(0);
+    }
+}
+.slide{
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right ,
+        transparent , 
+        black 10% 90% , 
+        transparent
+    );
+}
+.list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.item{
+   position: relative;
+    width: var(--width);
+    height: var(--height);
+    left: 100%;
+    animation: autoRun 8s linear infinite;
+    animation-delay: calc((3s / var(--quantity)) * (var(--position) - 1) - 3s);
+    transition: filter 0.5s;;
+    overflow-y: hidden;
+}
+.item img{
+    width: 100%;
+}
+@keyframes autoRun{
+    from{
+        left:100%
+    }
+    to{
+        left:calc(var(--width) * -1)
+    }
+}
+.slide:hover .item{
+    animation-play-state: paused !important ;
+    filter: grayscale(1);
+}
+.slider .item img:hover{
+    filter: grayscale(0);
+}
+.carusel-home{
+    position: absolute;
+    top: 90%;
+    margin-top: -5%;
+}
+.section-2{
+    padding-bottom: 50%;
+    background-color: #c3d2d4;
+    overflow: hidden;
+}
+.title-home-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    color:#274c6d;
+    font-family: "Fjalla One", sans-serif;
+}
+.title-home-2 h1{
+    font-size: 500%;
+}
+.title-home-2 p{
+    font-size: 300%;
+}
+.desc-home-2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.big-desc-home-2{
+    width: 70%;
+    margin: 5% 5%;
+}
+.image-home-2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -43%;
+    margin-right: 10%;
+    animation: transformImage;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes transformImage{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0);
     }
 }
