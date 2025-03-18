@@ -15,6 +15,9 @@ import curious from '../images/Curious.svg'
 import mascot2 from '..//images/mascot2.svg'
 import knight from '../images/knight.svg'
 import morning from '../images/desktopillo.svg'
+import affect from '../images/affectionate.svg'
+import books from '../images/books.svg'
+import moon from '../images/moon.svg'
 
 const Home = () => {
   return (
@@ -106,6 +109,36 @@ const Home = () => {
 
                 <article className="image-home-2">
                     <img src={morning} alt="" />
+                </article>
+            </section>
+
+            <section className="section-3">
+                <article className="title-home-3">
+                    <h1>How Riley works</h1>
+                    <p>Hint: it's not magic! Riley safely stores your data and uses the latest technology to help you make confident parenting decisions.</p>
+                    <button>Get Started Now</button>
+                </article>
+
+                <article className="desc-home-3">
+                        <div className="card-desc-3">
+                            <img src={affect} alt="" />
+                            <h1>Sharing advice, never your data</h1>
+                            <p>Your family's safety matters. Any information you provide us is secure and never shared with anyone, ever.</p>
+                        </div>
+                        <div className="card-desc-3">
+                            <img src={books} alt="" />
+                            <h1>Science-powered, AI-supported</h1>
+                            <p>Skip the 3am panic Googling. Riley uses the best medical data and pediatrician-endorsed resources to provide reliable insights in seconds.</p>
+                        </div>
+                        <div className="card-desc-3">
+                            <img src={moon} alt="" />
+                            <h1>Riley grows with your family</h1>
+                            <p>There's no generic advice here! Riley personalizes itself to you based on the details you provide. The more details, the deeper the personalization.</p>
+                        </div>
+                </article>
+
+                <article className="image-home-3">
+                        <img src={mascot} alt="" />
                 </article>
             </section>
 
