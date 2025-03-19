@@ -1,5 +1,8 @@
 import React from 'react'
+import { useEffect } from 'react'
 import '../styles/home.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import {motion} from "framer-motion"
 import sun from '../images/sun.png'
 import cloud from '../images/cloud.png'
@@ -18,8 +21,23 @@ import morning from '../images/desktopillo.svg'
 import affect from '../images/affectionate.svg'
 import books from '../images/books.svg'
 import moon from '../images/moon.svg'
+import award from '../images/award.svg'
+import product from '../images/phone-2.svg'
+import star from '../images/star.png'
+import { data } from 'react-router-dom'
 
 const Home = () => {
+
+    
+        useEffect(() => {
+            Aos.init({
+                delay: 100,
+                duration: 1000,
+                once: false,
+                easing: 'linear'
+            });
+        } , []);    
+
   return (
     <div className='home-page' > 
         <main>
@@ -65,14 +83,14 @@ const Home = () => {
                         <button type="button"> Get Started </button>
                     </ul>
                 </header>
-                <article className="title-home">
+                <article className="title-home" data-aos="fade-up" >
                     <h1>
                     The Baby Tracker That Gets You
                     </h1>
                     <p>Riley is the only all-in-one baby tracker that learns your family's unique rhythm to give you confidence and physician-backed guidance when it matters most.</p>
                     <button>Try 7 days free </button>
                 </article>
-                <article className="image-home">
+                <article className="image-home" data-aos="fade-up" >
                     <img src={phone} alt="" />
                     <img src={phone2} alt="" />
                 </article>
@@ -93,13 +111,13 @@ const Home = () => {
             </section>
             
             <section className="section-2">
-                <article className="title-home-2">
+                <article className="title-home-2" data-aos="fade-right" >
                     <h1>Less Worry, More Wonder</h1>
                     <p>Parenting might not come with a manual, but it now comes with an app</p>
                 </article>
                 
                 <article className="big-desc-home-2">
-                    <article className="desc-home-2">
+                    <article className="desc-home-2" data-aos="fade-right" >
                         <Card children={mascot} text={"Real-time parenting support: even at 3am"} desc={ "No more late-night Googling or going down an internet rabbit hole. Riley delivers instant, expert answers to all of your parenting questions – day or night."} ></Card>
                         <Card children={knight} text={"Your parenting toolbox, all in one place"} desc={ "Riley makes it easy to ask, track, and organize everything you need. Diapers, growth, vaccinations, milestones - all in one place."} ></Card>
                         <Card children={mascot2} text={"When you need a solution, not a 10 hour course"} desc={ "From independent sleep to handling tantrums, the first five years keep you on your toes. Riley guides you every (baby) step of the way with custom plans made just for you."} ></Card>
@@ -113,13 +131,13 @@ const Home = () => {
             </section>
 
             <section className="section-3">
-                <article className="title-home-3">
+                <article className="title-home-3" data-aos="fade-up" >
                     <h1>How Riley works</h1>
                     <p>Hint: it's not magic! Riley safely stores your data and uses the latest technology to help you make confident parenting decisions.</p>
                     <button>Get Started Now</button>
                 </article>
 
-                <article className="desc-home-3">
+                <article className="desc-home-3" data-aos="fade-up" >
                         <div className="card-desc-3">
                             <img src={affect} alt="" />
                             <h1>Sharing advice, never your data</h1>
@@ -139,6 +157,23 @@ const Home = () => {
 
                 <article className="image-home-3">
                         <img src={mascot} alt="" />
+                </article>
+            </section>
+
+            <section className="section-4">
+                <article className="title-home-4">
+                    <div className="card-home-4" data-aos="fade-left" >
+                        <img src={award} alt="" />
+                        <h1>Get personalized insights for:</h1>
+                        <h3>baby sleep</h3>
+                    </div>
+                    <div className="card-home-4">
+                        <img src={product} alt="" />
+                    </div>
+                    <div className="card-home-4" data-aos="fade-right" >
+                        <p>Riley can create custom plans for every milestone - from independent sleep and starting solids to potty training and tantrums - giving you the confidence to tackle anything parenthood throws your way.</p>
+                        <img src={star} alt="" />
+                    </div>
                 </article>
             </section>
 
