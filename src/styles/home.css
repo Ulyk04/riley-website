@@ -285,3 +285,25 @@ header{
 .image-home-3 img{
     width: 20%;
 }
+.title-home-4{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 15%;
+    margin-top: 10%;
+    font-family: "Fjalla One" , sans-serif;
+}
+.card-home-4{
+    width: 30%;
+}
+.card-home-4 img{
+    margin: 10% 0;
+}
+.card-home-4 h1{
+    font-size: 300%;
+    color: #6464a1;
+}
+.card-home-4 p{
+    font-size: 120%;
+    color: #6464a1;
+}
