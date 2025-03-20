@@ -11,7 +11,7 @@ import phone2 from '../images/download (2).png'
 import finsmen from '../images/finsmen.png'
 import nbc from '../images/nbc.png'
 import tech from '../images/tech.png'
-import { img } from 'framer-motion/client'
+import { img, title } from 'framer-motion/client'
 import Card from './Card'
 import mascot from '../images/mascot1.svg'
 import curious from '../images/Curious.svg'
@@ -25,9 +25,30 @@ import award from '../images/award.svg'
 import product from '../images/phone-2.svg'
 import star from '../images/star.png'
 import { data } from 'react-router-dom'
+import Accordian from './Accordian'
+
 
 const Home = () => {
 
+
+    const accordianData = [
+        {
+            title: 'How do I know I can trust Riley',
+            content: 'Riley is advice is grounded in the latest pediatric research and expert knowledge. We work closely with pediatricians, child development specialists, and parenting experts to ensure our information is accurate and up-to-date. Plus, Riley learns from your experiences, becoming more personalized and helpful over time. Think of Riley as a best friend with a Ph.D. in child development who is always by your side!'
+        },
+        {
+            title: 'How will you keep my family is data private?',
+            content: 'Your family is privacy is our top priority. We use bank-level encryption to protect your data, and we never share your information with third parties. Riley is personalized advice is generated just for you, based on the information you choose to share. You are always in control of your data, and you can delete it at any time.'
+        },
+        {
+            title: 'Do you offer a free trial?',
+            content: 'We do not offer a free trial, but we do provide a 14-day money-back guarantee—no questions asked! Try Riley risk-free, and if it is not the right fit for you, we all refund your purchase within 14 days.'
+        },
+        {
+            title: 'Can I use Riley for other baby tracking needs?',
+            content: 'Yes. Riley is not just a baby sleep-tracking app. It is an all-in-one parenting tool, helping parents track sleep, feeding, diaper changes, developmental milestones, and more.'
+        }
+    ]
     
         useEffect(() => {
             Aos.init({
@@ -198,6 +219,15 @@ const Home = () => {
                             <h1>Sebastian M.</h1>
                         </div>
                     </article>
+                </article>
+            </section>
+
+            <section className="section-6">
+                <article className="title-home-6" data-aos ='fade-down' data-aos-duration='2000' >
+                        <h2>FAQ</h2>
+                        {accordianData.map(({title , content}) => (
+                            <Accordian title={title} content={content} />
+                        ))}
                 </article>
             </section>
           
