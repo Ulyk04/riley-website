@@ -1,0 +1,32 @@
+.accordian-title{
+    background-color: rgb(145, 160, 175);
+    padding: 5%;
+}
+.accordian-content{
+    background-color: rgb(94, 118, 139);
+    padding: 3%;
+}
+.accordian{
+    margin: 1% 0;
+    font-family: "Chewy", system-ui;
+    color: rgb(238, 252, 216);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.accordian-item{
+    width: 1000px;
+    border-radius: 50px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.accordian-item:hover{
+    transform: translateY(10px);
+}
+.accordian h1{
+    font-size: 200%;
+}
+.accordian p{
+    font-size: 150%;
+}
