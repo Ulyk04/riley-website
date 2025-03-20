@@ -366,3 +366,19 @@ header{
     font-size: 200%;
     margin-top: 5%;
 }
+.section-5{
+    padding-bottom: 50%;
+}
+.title-home-6{
+   position: absolute;
+   left: 30%;
+   margin-top: 10%;
+}
+.title-home-6 h2{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 600%;
+    color: #274c6d;
+}
