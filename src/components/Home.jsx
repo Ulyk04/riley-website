@@ -32,7 +32,6 @@ const Home = () => {
         useEffect(() => {
             Aos.init({
                 delay: 100,
-                duration: 1000,
                 once: false,
                 easing: 'linear'
             });
@@ -176,7 +175,31 @@ const Home = () => {
                     </div>
                 </article>
             </section>
+            
+            <section className="section-5">
+                <article className="wrapper-home-5">
+                    <article className="title-home-5">
+                        <h1>Why Parents Love Riley</h1>
+                        <p>Join a community of parents like you who get it all done with Riley</p>
+                        <button>Join the club</button>
+                    </article>
 
+                    <article className="desc-home-5">
+                        <div className="card-home-5" data-aos='fade-down' data-aos-duration='1000' >
+                            <p>Riley feels like a personalized parent companion that will grow with my child. It offers tailored advice, activities, and resources that make navigating the challenges of parenthood so much easier.</p>
+                            <h1>Holly W.</h1>
+                        </div>
+                        <div className="card-home-5" data-aos='fade-down' data-aos-duration='2000' >
+                            <p>Riley is such an amazing tool for managing our family life. From activity ideas, tracking feedings, and answers backed by data - Riley just plugs into my life as a parent. It’s like having a parenting assistant right at my fingertips!</p>
+                            <h1>Alex G.</h1>
+                        </div>
+                        <div className="card-home-5" data-aos='fade-down' data-aos-duration='3000' >
+                            <p>Riley is like having a best friend with a PhD in child development who remembers what's important to me and helps me effectively parent my kiddo. I can't imagine parenting without it - and the personalized guidance is amazing.</p>
+                            <h1>Sebastian M.</h1>
+                        </div>
+                    </article>
+                </article>
+            </section>
           
         </main>
     </div>
