@@ -382,3 +382,76 @@ header{
     font-size: 600%;
     color: #274c6d;
 }
+.section-6{
+    padding-bottom: 50%;
+}
+.section-7{
+    margin-top: 20%;
+    background: linear-gradient(to top , #f0f036 , white);
+}
+.title-home-7{
+    display: flex;
+    justify-content: center;
+    padding: 15% 0;
+}
+.small-title-7{
+    width: 40%;
+}
+.small-title-7 h1{
+    font-size: 500%;
+    color: #274c6d;
+}
+.small-title-7 button{
+    width: 40%;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #274c6d;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    font-size: 150%;
+    color: #241719;
+    margin: 5%;
+    color: white;
+}
+.small-title-7 button:hover{
+    background-color: #e6e65c;
+    color: #274c6d;
+}
+.title-home-foot{
+    display: flex;
+    justify-content: center;
+}
+.small-title-foot img{
+    width: 20%;
+}
+.small-title-foot button{
+    width: 40%;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 150%;
+    transition: 0.3s;
+    color: white;
+}
+.small-title-foot button:hover{
+    transform: translateY(5px);
+}
+.small-title-foot{
+    margin: 5%;
+}
+.small-title-foot h1{
+    margin: 5% 0;
+}
+footer{
+    background-color: #274c6d;
+    color: white;
+}
+.small-title-foot input{
+    width: 70%;
+    height: 50px;
+    font-size: 150%;
+    border-radius: 50px;
+    border: none;
+}
