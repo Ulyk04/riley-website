@@ -26,7 +26,9 @@ import product from '../images/phone-2.svg'
 import star from '../images/star.png'
 import { data } from 'react-router-dom'
 import Accordian from './Accordian'
-
+import illo from '../images/illo.svg'
+import wordmarks from '../images/wordmark.svg'
+ 
 
 const Home = () => {
 
@@ -103,7 +105,7 @@ const Home = () => {
                         <button type="button"> Get Started </button>
                     </ul>
                 </header>
-                <article className="title-home" data-aos="fade-up" >
+                <article className="title-home" data-aos="fade-up" data-aos-duration='2000'  >
                     <h1>
                     The Baby Tracker That Gets You
                     </h1>
@@ -131,13 +133,13 @@ const Home = () => {
             </section>
             
             <section className="section-2">
-                <article className="title-home-2" data-aos="fade-right" >
+                <article className="title-home-2" data-aos="fade-right"  data-aos-duration='2000' >
                     <h1>Less Worry, More Wonder</h1>
                     <p>Parenting might not come with a manual, but it now comes with an app</p>
                 </article>
                 
                 <article className="big-desc-home-2">
-                    <article className="desc-home-2" data-aos="fade-right" >
+                    <article className="desc-home-2" data-aos="fade-right"  data-aos-duration='2000' >
                         <Card children={mascot} text={"Real-time parenting support: even at 3am"} desc={ "No more late-night Googling or going down an internet rabbit hole. Riley delivers instant, expert answers to all of your parenting questions – day or night."} ></Card>
                         <Card children={knight} text={"Your parenting toolbox, all in one place"} desc={ "Riley makes it easy to ask, track, and organize everything you need. Diapers, growth, vaccinations, milestones - all in one place."} ></Card>
                         <Card children={mascot2} text={"When you need a solution, not a 10 hour course"} desc={ "From independent sleep to handling tantrums, the first five years keep you on your toes. Riley guides you every (baby) step of the way with custom plans made just for you."} ></Card>
@@ -151,13 +153,13 @@ const Home = () => {
             </section>
 
             <section className="section-3">
-                <article className="title-home-3" data-aos="fade-up" >
+                <article className="title-home-3" data-aos="fade-up"  data-aos-duration='2000' >
                     <h1>How Riley works</h1>
                     <p>Hint: it's not magic! Riley safely stores your data and uses the latest technology to help you make confident parenting decisions.</p>
                     <button>Get Started Now</button>
                 </article>
 
-                <article className="desc-home-3" data-aos="fade-up" >
+                <article className="desc-home-3" data-aos="fade-up"  data-aos-duration='2000' >
                         <div className="card-desc-3">
                             <img src={affect} alt="" />
                             <h1>Sharing advice, never your data</h1>
@@ -182,7 +184,7 @@ const Home = () => {
 
             <section className="section-4">
                 <article className="title-home-4">
-                    <div className="card-home-4" data-aos="fade-left" >
+                    <div className="card-home-4" data-aos="fade-left"  data-aos-duration='2000' >
                         <img src={award} alt="" />
                         <h1>Get personalized insights for:</h1>
                         <h3>baby sleep</h3>
@@ -190,7 +192,7 @@ const Home = () => {
                     <div className="card-home-4">
                         <img src={product} alt="" />
                     </div>
-                    <div className="card-home-4" data-aos="fade-right" >
+                    <div className="card-home-4" data-aos="fade-right"  data-aos-duration='2000' >
                         <p>Riley can create custom plans for every milestone - from independent sleep and starting solids to potty training and tantrums - giving you the confidence to tackle anything parenthood throws your way.</p>
                         <img src={star} alt="" />
                     </div>
@@ -231,6 +233,45 @@ const Home = () => {
                 </article>
             </section>
           
+            <section className="section-7">
+                <article className="title-home-7">
+                    <div className="small-title-7">
+                        <h1>Riley has made life as a new mom so much easier - and so much more enjoyable</h1>
+                        <button> Get started </button>
+                    </div>
+                    <div className="small-image-7">
+                        <img src={illo} alt="" />
+                    </div>
+                </article>
+            </section>
+
+            <footer>
+                <article className="title-home-foot">
+                    <div className="small-title-foot">
+                        <img src={wordmarks} alt="" />
+                        <h1>Make your parenting journey smoother with Riley.</h1>
+                        <button>Get Started</button>
+                    </div>
+                    <hr />
+                    <div className="small-title-foot">
+                        <button> Why Riley </button>
+                        <button>Blog</button>
+                        <button>Pricing</button>
+                        <button>Editorial Process</button>
+                        <button>Privacy Policy</button>
+                        <button>Terms of Service</button>
+                        <button>Cookie Policy</button>
+                        <button>Support</button>
+                    </div>
+                    <hr />
+                    <div className="small-title-foot">
+                        <h1>Get tips and resources with our free newsletter</h1>
+                        <input type="email"
+                        placeholder='Enter your email'
+                         />
+                    </div>
+                </article>
+            </footer>
         </main>
     </div>
   )
